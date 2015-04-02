@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Module Layout Interview</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src='https://code.jquery.com/jquery-2.1.3.min.js'></script>
+    <script src ='https://maps.google.com/maps/api/js?key=AIzaSyBdv-5ZpUGMLJicoPGVAFpNotuC03Xsejw&libraries=geometry,drawing&sensor=false'></script>
+    <script src='geometry.js'></script>
+    <script src='script.js'></script>
+
+</head>
+<body>
+    <div id="sidebar" class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h3>Module Layout Options</h3>
+                <form>
+                    <div class="form-group form-group-sm">
+                        <label for="moduleWidth">Module Width</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="moduleWidth" value=1>
+                              <div class="input-group-addon">m</div>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label for="moduleHeight">Module Height</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="moduleHeight" value=1.6>
+                              <div class="input-group-addon">m</div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="form-group form-group-sm">
+                        <label for="rowSpacing">Row Spacing</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="rowSpacing" value=1>
+                            <div class="input-group-addon">m</div>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label for="modulesInRow">Modules in Row</label>
+                        <input type="number" class="form-control" id="modulesInRow" value=1>
+                    </div>
+                    <hr>
+                    <div class="form-group form-group-sm">
+                        <label for="orientation">Modules Orientation</label>
+                        <select class="form-control">
+                            <option value="vertical" selected>Vertical (Portrait)</option>
+                            <option value="horizontal">Horizontal (Landscape)</option>
+                        </select>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label for="tilt">Module Tilt</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="tilt" value=0 min=0 max=89>
+                              <div class="input-group-addon">&deg;</div>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label for="azimuth">Module Azimuth</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="azimuth" value=180>
+                              <div class="input-group-addon">&deg;</div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-lg btn-block" id="drawModules">Draw Modules</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="map-canvas"></div>
+</body>
+</html>
+

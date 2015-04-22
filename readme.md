@@ -22,4 +22,4 @@ You can view the code simply by opening index.html in a browser.  If you have an
 6. Implement **azimuth**, in reality the modules could be oriented to face any direction (e.g. Southwest), azimuth defines which directions the modules face, where 0º is North, 180º is south, 90ª is East, and 270º is West
 
 
-[This image](https://helioscope.folsomlabs.com/static/helioscope/documentation/static/overlays/fixed-racking.png) from our documentation visualizes a few of these parameters: **row spacing**, **tilt**, and **modules in row** ('Frame Size = 4 Modules Up' would be the same as '4 **Modules in Row**')
+[This training video (1:39)](https://www.youtube.com/watch?v=cnyIpSLW6hg) from HelioScope shows how many of the rules work. [This image](https://helioscope.folsomlabs.com/static/helioscope/documentation/static/overlays/fixed-racking.png) from our documentation visualizes a few of these parameters: **row spacing**, **tilt**, and **modules in row** ('Frame Size = 4 Modules Up' would be the same as '4 **Modules in Row**')
